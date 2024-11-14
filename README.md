@@ -38,7 +38,7 @@ The project aims to assess the extent to which air pollution affects respiratory
 ## Data Overview
 The datasets used in this analysis were sourced from Kaggle and included:
 1. **Pollution Data** – Measurements of PM2.5, PM10, and NO2 levels over multiple years and countries. Find raw data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Air_Pollution_Levels_Raw_Data.xlsx)
-2. **Mortality Data** – Annual mortality rates from respiratory diseases, focusing on asthma, COPD, and lung cancer. Find raw data [here]()
+2. **Mortality Data** – Annual mortality rates from respiratory diseases, focusing on asthma, COPD, and lung cancer. Find raw data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Diseases_Types_Raw%20Data.xlsx)
 3. **Pollution and Mortality Clean Data** - Excel power query cleaned data in a single Excel Workbook. Find combined clean data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Pollution_Level%20-%20Disease_Type_Clean_Data.xlsx)
 
 ## Methodology
@@ -65,8 +65,8 @@ The analysis indicates that NO2 significantly impacts respiratory disease mortal
 - Further research to explore the long-term effects of PM2.5 and interactions between various pollutants.
 
 ## Files
-- `Analysis_R_Code.R`: The R code for data cleaning, statistical analysis, and visualization.
-- `Relationship between air pollution and respiratory health.docx`: A detailed report of the analysis and findings.
+- The R code for data cleaning, statistical analysis, and visualization. Find the R Studio code [here]()
+- Relationship between air pollution and respiratory health.docx`: A detailed report of the analysis and findings in word document found [here]().
 
 ---
 
@@ -75,4 +75,4 @@ The analysis indicates that NO2 significantly impacts respiratory disease mortal
 ---
 
 ### Contact
-For further inquiries or collaboration, please reach out via [LinkedIn](your-linkedin-profile) or email.
+For further inquiries or collaboration, please reach out via +254740423675 or thomas.nnyanumba@gmail.com.

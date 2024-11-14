@@ -37,8 +37,9 @@ The project aims to assess the extent to which air pollution affects respiratory
 
 ## Data Overview
 The datasets used in this analysis were sourced from Kaggle and included:
-1. **Pollution Data** – Measurements of PM2.5, PM10, and NO2 levels over multiple years and countries.
-2. **Mortality Data** – Annual mortality rates from respiratory diseases, focusing on asthma, COPD, and lung cancer.
+1. **Pollution Data** – Measurements of PM2.5, PM10, and NO2 levels over multiple years and countries. Find raw data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Air_Pollution_Levels_Raw_Data.xlsx)
+2. **Mortality Data** – Annual mortality rates from respiratory diseases, focusing on asthma, COPD, and lung cancer. Find raw data [here]()
+3. **Pollution and Mortality Clean Data** - Excel power query cleaned data in a single Excel Workbook. Find combined clean data [here]()
 
 ## Methodology
 1. **Data Preprocessing:** The raw data was cleaned in Excel to remove missing and duplicated values and then imported into R.

@@ -65,7 +65,7 @@ The analysis indicates that NO2 significantly impacts respiratory disease mortal
 - Further research to explore the long-term effects of PM2.5 and interactions between various pollutants.
 
 ## Files
-- The R code for data cleaning, statistical analysis, and visualization. Find the R Studio code [here]()
+- The R code for data cleaning, statistical analysis, and visualization. Find the R Studio code [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Analysis_R_Code.R)
 - Relationship between air pollution and respiratory health.docx`: A detailed report of the analysis and findings in word document found [here]().
 
 ---

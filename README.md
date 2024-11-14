@@ -1,6 +1,6 @@
 # Relationship Between Air Pollution and Respiratory Health
 
-![Air Pollution and Health](https://path/to/your/image.jpg)
+![](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Image.jpg)
 
 ## Introduction
 Air pollution has become a significant public health concern globally, particularly in urban areas. Exposure to pollutants like particulate matter (PM2.5, PM10) and nitrogen dioxide (NO2) has been linked to increased rates of respiratory diseases, including asthma, chronic obstructive pulmonary disease (COPD), and lung cancer. This project investigates the correlation between air pollution levels and respiratory disease mortality across several countries over time, using statistical analysis techniques in R.
@@ -9,9 +9,31 @@ Air pollution has become a significant public health concern globally, particula
 The project aims to assess the extent to which air pollution affects respiratory health. Specifically, it examines whether higher levels of air pollution correlate with increased mortality rates from respiratory diseases, with implications for public health and environmental policy.
 
 ## Skills Demonstrated
-- **Data Cleaning and Transformation:** Preprocessed datasets in Excel and imported them to R.
-- **Statistical Analysis:** Calculated descriptive statistics and performed regression analysis to investigate relationships.
-- **Data Visualization:** Generated scatter plots, box plots, and regression models to illustrate findings.
+
+- **Data Cleaning and Transformation:** 
+  - Cleaned and transformed raw data from multiple CSV files in Excel, addressing missing values and duplicate entries to ensure data quality.
+  - Utilized Excel Power Query for initial data preprocessing, including standardizing formats, renaming columns for consistency, and converting data types (e.g., pollutants in micrograms per cubic meter).
+  - Further refined the data in R, handling outliers and converting categorical and numerical data for analysis readiness.
+
+- **Exploratory Data Analysis (EDA):**
+  - Performed exploratory data analysis in R, including calculating measures of central tendency (mean, median) and variability (standard deviation, variance) to understand the distribution and spread of pollutant levels and mortality rates across countries.
+  - Used correlation matrices to examine relationships between pollutants (PM2.5, PM10, NO2) and different respiratory diseases (asthma, COPD, lung cancer), identifying trends and potential points of interest for further analysis.
+
+- **Statistical Analysis and Hypothesis Testing:**
+  - Conducted regression analysis to test hypotheses about the impact of air pollutants on respiratory disease mortality, using R’s linear regression functions to model the relationship between pollutants and mortality rates.
+  - Interpreted regression coefficients, p-values, and F-statistics to evaluate the significance of each pollutant on respiratory health outcomes, ensuring rigorous statistical validation.
+  - Generated a multiple R-squared value to assess model fit, providing insights into how much variability in mortality rates is explained by air pollution.
+
+- **Data Visualization:**
+  - Created a variety of visualizations to illustrate key findings:
+    - **Scatter Plots:** Highlighted the relationship between pollutant levels and respiratory mortality, displaying positive trends for pollutants like NO2.
+    - **Box Plots:** Compared distributions of respiratory mortality rates across countries with varying levels of PM2.5, PM10, and NO2, visually emphasizing areas with higher pollution and mortality rates.
+  - Customized plot aesthetics (e.g., colors, labels, legends) to improve clarity and accessibility for a broad audience.
+
+- **Interpretation and Critical Analysis:**
+  - Analyzed and contextualized the results, explaining the broader implications of air pollution on respiratory health.
+  - Identified confounding factors, such as healthcare access and socio-economic conditions, that may influence respiratory outcomes alongside air quality.
+  - Provided actionable insights by discussing the role of specific pollutants, particularly NO2, in respiratory mortality, offering evidence-based recommendations for policy development.
 
 ## Data Overview
 The datasets used in this analysis were sourced from Kaggle and included:

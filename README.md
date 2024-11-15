@@ -14,6 +14,12 @@ The project aims to assess the extent to which air pollution affects respiratory
   - Cleaned and transformed raw data from multiple CSV files in Excel, addressing missing values and duplicate entries to ensure data quality.
   - Utilized Excel Power Query for initial data preprocessing, including standardizing formats, renaming columns for consistency, and converting data types (e.g., pollutants in micrograms per cubic meter).
   - Further refined the data in R, handling outliers and converting categorical and numerical data for analysis readiness.
+  
+![Disease Type Power Query Clean Data]()
+**Figure 1:** Disease Type Power Query Clean Data
+
+![Pollution Level Power Query Clean Data](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Pollution%20Level%20Power%20Query%20Clean%20Data.png)
+**Figure 2:** Pollution Level Power Query Clean Data
 
 - **Exploratory Data Analysis (EDA):**
   - Performed exploratory data analysis in R, including calculating measures of central tendency (mean, median) and variability (standard deviation, variance) to understand the distribution and spread of pollutant levels and mortality rates across countries.

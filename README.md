@@ -151,12 +151,22 @@ The datasets used in this analysis were sourced from Kaggle and included:
 
 ## Results and Analysis
 - **Descriptive Statistics:** PM10 showed the highest concentration levels, while mortality rates were highest in areas with elevated NO2 levels.
+
+**Table 1:** Descriptive Statistics
+
+![](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Descriptive%20Statistics%20JPEG.JPG)
+
 - **Correlation Analysis:** Positive correlations were found between pollutant levels and respiratory disease mortality, especially with NO2 and COPD/lung cancer mortality.
 - **Regression Analysis:** NO2 had the most significant positive association with respiratory disease mortality, indicating a need for focused emission reductions.
 
 ### Visualizations
 - **Scatter Plots:** Displayed positive trends between pollutants and respiratory deaths.
+
+![Scatter Plot](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Scatter%20Plot.png)
+
 - **Box Plots:** Showed broader distributions in respiratory mortality in countries with high PM levels.
+
+![Boxplot](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Boxplot.png)
 
 ## Conclusion
 The analysis indicates that NO2 significantly impacts respiratory disease mortality, especially for chronic conditions like COPD and lung cancer. This highlights the importance of reducing NO2 emissions through stricter regulations.

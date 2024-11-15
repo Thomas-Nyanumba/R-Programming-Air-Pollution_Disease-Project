@@ -23,10 +23,40 @@ The project aims to assess the extent to which air pollution affects respiratory
 
 - **Exploratory Data Analysis (EDA):**
   - Performed exploratory data analysis in R, including calculating measures of central tendency (mean, median) and variability (standard deviation, variance) to understand the distribution and spread of pollutant levels and mortality rates across countries.
-  - Used correlation matrices to examine relationships between pollutants (PM2.5, PM10, NO2) and different respiratory diseases (asthma, COPD, lung cancer), identifying trends and potential points of interest for further analysis.
+<pre><code class = "r">
+
+# Descriptive statistical techniques 
+# Numerical analysis 
+#Mean, Median and Mode
+# Calculate mean and median for PM2.5 levels
+mean_pm25 <- mean(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
+median_pm25 <- median(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
+
+#Standard deviation and variance
+# Calculate standard deviation and variance for PM2.5 levels
+sd_pm25 <- sd(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
+var_pm25 <- var(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
+
+</pre></code>
+- Used correlation matrices to examine relationships between pollutants (PM2.5, PM10, NO2) and different respiratory diseases (asthma, COPD, lung cancer), identifying trends and potential points of interest for further analysis.
 
 - **Statistical Analysis and Hypothesis Testing:**
   - Conducted regression analysis to test hypotheses about the impact of air pollutants on respiratory disease mortality, using R’s linear regression functions to model the relationship between pollutants and mortality rates.
+<pre><code class = "r">
+
+#Linear Regression 
+# Here, we create a new data frame for regression analysis
+regression_data <- combined_data %>%
+  select(`Number of death (rounded)`, `PM2.5 (μg/m3)`, `PM10 (μg/m3)`, `NO2 (μg/m3)`) %>%
+  drop_na()  # Remove rows with missing values
+
+# Fit the linear regression model
+linear_model <- lm(`Number of death (rounded)` ~ `PM2.5 (μg/m3)` + `PM10 (μg/m3)` + `NO2 (μg/m3)`, data = regression_data)
+
+# Summary of the linear regression model
+summary(linear_model)
+
+</pre></code>
   - Interpreted regression coefficients, p-values, and F-statistics to evaluate the significance of each pollutant on respiratory health outcomes, ensuring rigorous statistical validation.
   - Generated a multiple R-squared value to assess model fit, providing insights into how much variability in mortality rates is explained by air pollution.
 

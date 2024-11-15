@@ -63,8 +63,74 @@ summary(linear_model)
 - **Data Visualization:**
   - Created a variety of visualizations to illustrate key findings:
     - **Scatter Plots:** Highlighted the relationship between pollutant levels and respiratory mortality, displaying positive trends for pollutants like NO2.
+   
+<pre><code class = "r">
+
+  install.packages("ggplot2")
+library(ggplot2)
+
+# Convert data to a long format to plot all pollutants in one chart
+combined_long <- combined_data %>%
+  pivot_longer(cols = starts_with("PM") | starts_with("NO"), 
+               names_to = "Pollutant", 
+               values_to = "Value")
+
+# Create the scatter plot with faceting by pollutant
+ggplot(combined_long, aes(x = Year, y = Value, color = Country)) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Pollutant Levels Over Time by Country",
+       x = "Year",
+       y = "Pollutant Levels (μg/m3)") +
+  facet_wrap(~ Pollutant, scales = "free_y") +  # Create a separate plot for each pollutant
+  theme_minimal() +
+  theme(legend.position = "none")  # Hide legend for clarity
+
+
+
+# Specify the countries you want to include
+selected_countries <- c("Belgium", "Hungary", "Germany", "Norway")
+
+# Filter for only these 10 countries
+filtered_data <- combined_long %>%
+  filter(Country %in% selected_countries)
+
+# Scatter plot with labels for each country
+my_scatterplot<-ggplot(filtered_data, aes(x = Year, y = Value, color = Country)) +
+  geom_point() +
+  geom_line() +
+  geom_text(aes(label = round(Value, 2)), vjust = -0.5, size = 3, check_overlap = TRUE) +  # Adds exact values rounded to 2 decimal places
+  labs(title = "Pollutant Levels Over Time for Selected Countries",
+       x = "Year",
+       y = "Pollutant Levels (μg/m3)") +
+  facet_wrap(~ Pollutant, scales = "free_y") +
+  theme_minimal() +
+  theme(legend.position = "right")  # Hide legend to avoid redundancy
+
+</pre></code>
     - **Box Plots:** Compared distributions of respiratory mortality rates across countries with varying levels of PM2.5, PM10, and NO2, visually emphasizing areas with higher pollution and mortality rates.
   - Customized plot aesthetics (e.g., colors, labels, legends) to improve clarity and accessibility for a broad audience.
+
+<pre><code class = "r">
+
+# Boxplot
+# Reshape data to include only pollutants and deaths, filtering for non-null values
+combined_long_deaths <- combined_data %>%
+  pivot_longer(cols = starts_with("PM") | starts_with("NO"), 
+               names_to = "Pollutant", 
+               values_to = "Value") %>%
+  filter(!is.na("Number of death (rounded)"))  # Filter out any rows where deaths data is missing
+
+# Create boxplot
+my_boxplot<-ggplot(combined_long_deaths, aes(x = Pollutant, y = `Number of death (rounded)`, fill = Pollutant)) +
+  geom_boxplot() +
+  labs(title = "Effect of Particulate Matter and Emissions on Deaths by Country",
+       x = "Pollutant",
+       y = "Number of death (rounded)") +
+  theme_minimal() +
+  theme(legend.position = "right")  # Remove legend for a cleaner look
+
+</pre></code>
 
 - **Interpretation and Critical Analysis:**
   - Analyzed and contextualized the results, explaining the broader implications of air pollution on respiratory health.

